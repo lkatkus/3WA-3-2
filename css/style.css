@@ -1,0 +1,115 @@
+@import url("normalize.css");
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-image: url("../img/fond.png");
+}
+
+.container{
+    width: 80%;
+    background-color: blue;
+    margin:0 auto;
+    min-width: 750px;
+}
+
+header{
+    background-color: #B9CB21;
+    padding: 10px 30px 10px 30px;
+    height: 135px;;
+    vertical-align: middle;
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navBar{
+    float: right;
+    display: inline-block;
+    height: 100%;
+    line-height: 135px;
+}
+
+a{
+    font-size: 1rem;
+    padding-right: 2rem;
+    color: #314B08;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+section{
+    padding: 10px;
+    background-color: white;
+}
+
+.aboutUs{
+    width: 35%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+    border-right: 2px solid #d3d3d3;
+}
+
+.weDo{
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+    padding: 10px;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+    color: #B9CB21;
+}
+
+h3{
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    color: #B9CB21;
+}
+
+img.logo{
+    width: auto;
+}
+
+img.largeImg{
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+img.smallImg{
+    width: 50%;
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+p{
+    text-align: justify;
+    margin: 0 0 20px 0;
+}
+
+button{
+    background-color: #B9CB21;
+    color: white;
+    float: right;
+    border: none;
+    padding: 10px 20px 10px 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}

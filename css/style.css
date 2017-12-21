@@ -56,6 +56,11 @@ nav a{
     text-align: justify;
 }
 
+nav a:hover{
+    color:#009999;
+    transition: color 0.2s;
+}
+
 .activeNav{
     border-bottom: 1px solid #314B08;
     text-decoration: none;

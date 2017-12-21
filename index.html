@@ -3,25 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Green Office Website</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-
         <div class="container">
             <header>
-                <img class="logo" src="img/logo.png" alt="Green Office Logo">
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="Green Office Logo">
+                </a>
                 <nav class="navBar">
                     <a href="#">Location</a>
-                    <a href="#">About us</a>
-                    <a href="#">Contact</a>
+                    <a target="_parent" href="about.html">About us</a>
+                    <a target="_parent" href="contact.html">Contact</a>
                 </nav>
             </header>
-
             <div class="main">
                 <section>
-                    <div class="aboutUs">
-                        <h2><i class="fa fa-pagelines" aria-hidden="true"></i> Who we are</h2>
+                    <div class="sectionItemSmall">
+                        <h2><i class="fa fa-pagelines" aria-hidden="true"></i>Who we are</h2>
                         <h3>Lorem ipsum dolor sit amet</h3>
                         <img class="largeImg" src="img/who.jpg" alt="Team photo">
                         <p>
@@ -30,21 +29,19 @@
                         <p>
                             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                         </p>
-
-                        <button type="button" name="button">Read more</button>
-
+                        <a href="about.html">
+                            <button type="button" name="button">Read more</button>
+                        </a>
                     </div>
-
-                    <div class="weDo">
-                        <h2><i class="fa fa-pagelines" aria-hidden="true"></i> What we do</h2>
+                    <div class="sectionItemLarge">
+                        <h2><i class="fa fa-pagelines" aria-hidden="true"></i>What we do</h2>
                         <h3>Lorem ipsum dolor sit amet</h3>
-                        <img class="smallImg" src="img/what.jpg" alt="Team photo">
+                        <img class="smallImg" src="img/what.jpg" alt="Provided services">
                         <p>
                             Lorem ipsum dolor sit amet, at mel quot fastidii. At duo electram accommodare, dico porro urbanitas ius et. Odio aliquip scripserit eos ea. Ut prima nemore concludaturque ius. Ne cum paulo consetetur, mea ut quot tempor nusquam. At epicurei iudicabit cotidieque pro, mentitum omnesque detraxit duo ut. Mel graeci verterem ne, et fabellas contentiones vix.
 
                             <br/>Cu illum noluisse ad. Summo inermis feugait mel at, euismod feugait qui at. Tempor graeci cetero cu duo, ne sea munere nemore. Ius quem nulla malorum et.
                         </p>
-
                         <ul>
                             <li>Lorem ipsum dolor sit amet</li>
                             <li>Letraset sheets containing</li>
@@ -53,20 +50,18 @@
                             <li>publishing software</li>
                             <li>versions of Lorem Ipsum</li>
                         </ul>
-
                         <button type="button" name="button">Read more</button>
-
                     </div>
                 </section>
             </div>
-
-
-
         </div>
-
         <footer>
-            Copyright (c) 2015 Copyright Holder All Rights Reserved.
+            Copyright (c) 2017 Copyright Holder All Rights Reserved.
         </footer>
+
+        <div id="triangle">
+            <i class="fa fa-tree" aria-hidden="true"></i>
+        </div>
 
     </body>
 </html>

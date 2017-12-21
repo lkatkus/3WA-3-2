@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Green Office Website</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="index.html">
+                    <img class="logo" src="img/logo.png" alt="Green Office Logo">
+                </a>
+                <nav class="navBar">
+                    <a href="#">Location</a>
+                    <a target="_parent" href="about.html">About us</a>
+                    <a class="activeNav" target="_parent" href="contact.html">Contact</a>
+                </nav>
+            </header>
+            <div class="main">
+                <section>
+                    <div class="sectionItemSmall">
+                        <h2><i class="fa fa-home" aria-hidden="true"></i> Contact</h2>
+                        <ul class="ulStyled">
+                            <li class="liStyled"><i class="fa fa-phone" aria-hidden="true"></i>+370 600 12345</li>
+                            <li class="liStyled"><i class="fa fa-envelope" aria-hidden="true"></i>office@example.com</li>
+                            <li class="liStyled"><i class="fa fa-home" aria-hidden="true"></i> Švitrigailos g. 8, Vilnius</li>
+                        </ul>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <form class="contactForm" action="index.html" method="GET">
+                            Name:<br/>
+                            <input type="text" name="userName" value="" placeholder=" Your name">
+                            <input type="radio" name="userGender" value="Male">
+                            <label for="userGender">Male</label>
+                            <input type="radio" name="userGender" value="Female">
+                            <label for="userGender">Female</label>
+                            <br/>E-mail:<br/>
+                            <input type="text" name="userEmail" value="" placeholder=" Your email">
+                            <input type="submit" name="" value="Submit">
+                        </form>
+                    </div>
+                    <div class="sectionItemLarge">
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=svitrigailos 8&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/google-maps/">pureblack.de</a></div>
+                        <style>.mapouter{overflow:hidden;height:100%;width:100%;}.gmap_canvas {background:none!important;height:500px;width:100%;}</style>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            Copyright (c) 2017 Copyright Holder All Rights Reserved.
+        </footer>
+    </body>
+</html>

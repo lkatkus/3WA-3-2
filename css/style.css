@@ -1,25 +1,39 @@
 @import url("normalize.css");
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 html{
     font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
 }
 
 body{
     background-image: url("../img/fond.png");
+    position:relative;
 }
 
 .container{
-    width: 80%;
     background-color: blue;
     margin:0 auto;
-    min-width: 750px;
+    width: 80%;
+    /*min-width: 750px;*/
+    min-width: 600px;
+    max-width: 800px;
 }
 
 header{
     background-color: #B9CB21;
-    padding: 10px 30px 10px 30px;
-    height: 135px;;
+    padding: 0 30px 0 30px;
+    height: 140px;
     vertical-align: middle;
+    box-sizing: border-box;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 footer{
@@ -29,39 +43,27 @@ footer{
 
 .navBar{
     float: right;
-    display: inline-block;
-    height: 100%;
-    line-height: 135px;
+    line-height: 140px;
 }
 
-a{
-    font-size: 1rem;
-    padding-right: 2rem;
+nav a{
+    font-size:1.2rem;
+    padding: 0 1rem 0.25rem 1rem;
     color: #314B08;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: justify;
 }
 
+.activeNav{
+    border-bottom: 1px solid #314B08;
+    text-decoration: none;
+}
 
 section{
-    padding: 10px;
+    padding: 20px 40px 20px 40px;
     background-color: white;
-}
-
-.aboutUs{
-    width: 35%;
-    box-sizing: border-box;
-    float: left;
-    padding: 10px;
-    border-right: 2px solid #d3d3d3;
-}
-
-.weDo{
-    width: 65%;
-    box-sizing: border-box;
-    float: left;
-    padding: 10px;
 }
 
 section::after{
@@ -70,31 +72,59 @@ section::after{
     clear: both;
 }
 
+.sectionItemFull{
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+.sectionItemSmall{
+    width: 35%;
+    box-sizing: border-box;
+    float: left;
+    padding-right:20px;
+    border-right: 1px solid #d3d3d3;
+}
+
+.sectionItemLarge{
+    width: 65%;
+    box-sizing: border-box;
+    float: left;
+    padding-left: 20px;
+}
+
 h2{
     font-size: 2rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
     color: #B9CB21;
 }
 
 h3{
     font-size: 1rem;
-    margin: 0 0 1rem 0;
+    margin: 0 0 0.5rem 0;
     color: #B9CB21;
 }
 
-img.logo{
-    width: auto;
+.logo{
+    height: 130px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-img.largeImg{
+.largeImg{
     width: 100%;
     margin: 0 0 1rem 0;
 }
 
-img.smallImg{
+.smallImg{
     width: 50%;
     float: left;
     margin: 0 1rem 1rem 0;
+}
+
+i{
+    margin-right: 0.5rem;
 }
 
 p{
@@ -107,9 +137,74 @@ button{
     color: white;
     float: right;
     border: none;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 20px 5px 20px;
+    font-weight: 300;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+input{
+margin-bottom: 10px;
+}
+
+input[type=text]{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+input[type=radio]{
+    border: solid 1px black;
+    color: white;
+}
+
+input[type=submit]{
+    background-color: #B9CB21;
+    color: white;
+    float: right;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+.ulStyled{
+    padding: 0;
+}
+
+.liStyled{
+    display: block;
+    margin: 0;
+    color: blue;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+
+li i{
+    color: #d3d3d3;
+}
+
+#triangle{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 0;
+	height: 0;
+	border-top: 50px solid red;
+	border-right: 50px solid transparent;
+    transition: all 1s;
+}
+
+#triangle:hover{
+    transform-origin: top left;
+    transform: scale(5);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.fa-tree{
+    color:white;
+    position:relative;
+    top:-50px;
+    left:5px;
 }
